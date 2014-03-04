@@ -1,15 +1,16 @@
 {
   "name": "marked",
   "main": "./lib/marked",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
   "description": "Opens the current file in Marked.app",
-  "activationEvents": ["marked:open"],
+  "activationEvents": [
+    "marked:open"
+  ],
   "repository": "https://github.com/cliffrowley/atom-marked",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
