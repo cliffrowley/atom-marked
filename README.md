@@ -1,5 +1,5 @@
 # Open in Marked.app
 
-Opens the active file in [Marked.app](http://markedapp.com).
+Opens the active file in [Marked.app](http://markedapp.com) (<kbd>&#8984;&#8679;M</kbd>)
 
-Not much to say about it really.
+![Screenshot](marked.png)
