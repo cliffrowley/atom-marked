@@ -6,4 +6,4 @@ module.exports =
 
   openMarked: ->
     path = atom.workspace.getActiveEditor().buffer?.file?.path
-    exec "open -a Marked.app #{path}" if path?
+    exec "open -a Marked.app \"#{path}\"" if path?
