@@ -3,7 +3,7 @@
   "main": "./lib/marked",
   "version": "0.1.5",
   "private": true,
-  "description": "Opens the current file in Marked.app",
+  "description": "Opens the current file in Marked.app (Mac only!)",
   "activationEvents": [
     "marked:open"
   ],
