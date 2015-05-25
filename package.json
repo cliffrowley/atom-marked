@@ -1,11 +1,13 @@
 {
   "name": "marked",
   "main": "./lib/marked",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "private": true,
   "description": "Opens the current file in Marked.app (Mac only!)",
   "activationCommands": {
-    "atom-text-editor": ["marked:open"]
+    "atom-text-editor": [
+      "marked:open"
+    ]
   },
   "repository": "https://github.com/cliffrowley/atom-marked",
   "license": "MIT",
