@@ -1,7 +1,8 @@
 # See https://atom.io/docs/latest/creating-a-package#menus for more details
 'context-menu':
-  '.overlayer':
-      'Open in Marked.app': 'marked:open'
+  'atom-workspace': [
+    { 'label': 'Open in Marked', 'command': 'marked:open' }
+  ]
 
 'menu': [
   {
