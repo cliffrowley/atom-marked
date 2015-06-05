@@ -1,14 +1,27 @@
 exec = require("child_process").exec
 
-module.exports =
+{CompositeDisposable} = require 'atom'
+
+module.exports = Marked =
+  subscriptions: null
+
   config:
     application:
       type: 'string'
       default: 'Marked 2.app'
-  activate: (state) ->
-    atom.workspaceView.command "marked:open", => @openMarked()
 
-  openMarked: ->
+  activate: (state) ->
+    @subscriptions = new CompositeDisposable
+
+    @subscriptions.add atom.commands.add 'atom-workspace', 'marked:open': => @open()
+
+  deactivate: ->
+    @subscriptions.dispose()
+
+  serialize: ->
+
+  open: ->
     path = atom.workspace.getActiveEditor().buffer?.file?.path
-    app = atom.config.get('marked.application')
+    app  = atom.config.get('marked.application')
+
     exec "open -a \"#{app}\" \"#{path}\"" if path?
