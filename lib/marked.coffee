@@ -13,7 +13,7 @@ module.exports = Marked =
   activate: (state) ->
     @subscriptions = new CompositeDisposable
 
-    @subscriptions.add atom.commands.add 'atom-workspace', 'marked:open': => @open()
+    @subscriptions.add atom.commands.add 'atom-text-editor', 'marked:open': => @open()
 
   deactivate: ->
     @subscriptions.dispose()
@@ -21,7 +21,7 @@ module.exports = Marked =
   serialize: ->
 
   open: ->
-    path = atom.workspace.getActiveEditor().buffer?.file?.path
+    path = atom.workspace.getActiveTextEditor()?.buffer?.file?.path
     app  = atom.config.get('marked.application')
 
     exec "open -a \"#{app}\" \"#{path}\"" if path?
