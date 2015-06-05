@@ -1,10 +1,9 @@
 {
   "name": "marked",
   "main": "./lib/marked",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Opens the current file in Marked.app (Mac only!)",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-workspace": "marked:open"
   },
@@ -13,8 +12,7 @@
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "readme": "# Open in Marked.app\n\nOpens the active file in [Marked.app](http://markedapp.com) (<kbd>&#8984;&#8679;M</kbd>)\n\n**NOTE: Marked.app - and therefore this package - is for Mac only!**",
   "readmeFilename": "README.md"
 }
