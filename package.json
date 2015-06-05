@@ -1,7 +1,7 @@
 {
   "name": "marked",
   "main": "./lib/marked",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Opens the current file in Marked.app (Mac only!)",
   "keywords": [],
   "activationCommands": {
