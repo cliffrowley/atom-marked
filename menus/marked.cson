@@ -1,16 +1,21 @@
 # See https://atom.io/docs/latest/creating-a-package#menus for more details
 'context-menu':
-  'atom-workspace': [
-    { 'label': 'Open in Marked', 'command': 'marked:open' }
+  'atom-text-editor': [
+    {
+      'label': 'Open in Marked',
+      'command': 'marked:open'
+    }
   ]
-
 'menu': [
   {
     'label': 'Packages'
     'submenu': [
       'label': 'Marked'
       'submenu': [
-        { 'label': 'Open in Marked', 'command': 'marked:open' }
+        {
+          'label': 'Open in Marked',
+          'command': 'marked:open'
+        }
       ]
     ]
   }
